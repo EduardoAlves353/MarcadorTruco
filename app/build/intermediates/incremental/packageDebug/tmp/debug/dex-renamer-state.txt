@@ -1,0 +1,4 @@
+#Wed Aug 15 16:33:40 BRT 2018
+base.0=C\:\\Users\\0040481722005\\ddd\\edu\\ADS - 2 Sem\\Kleber Android - aula\\MarcadorTruco\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

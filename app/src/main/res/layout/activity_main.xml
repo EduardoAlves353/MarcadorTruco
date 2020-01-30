@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:screenOrientation="portrait"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Nós"
+                    style="@style/TeamNameTextView" />
+
+                <TextView
+                    android:id="@+id/score_yeam_a"
+                    android:text="0"
+                    style="@style/TeamScoreTextView" />
+
+                <Button
+                    android:id="@+id/aumentarUmPontoTimeA"
+                    android:text="+1"
+                    android:onClick="aumentarUmPontoTimeA"
+                    style="@style/ButtonOutlineBorder" />
+                <Button
+                    android:id="@+id/aumentarTresPontoTimeA"
+                    android:text="+3"
+                    android:onClick="aumentarTresPontoTimeA"
+                    style="@style/ButtonOutlineBorder" />
+                <Button
+                    android:id="@+id/aumentarSeisPontoTimeA"
+                    android:text="+6"
+                    android:onClick="aumentarSeisPontoTimeA"
+                    style="@style/ButtonOutlineBorder" />
+                <Button
+                    android:id="@+id/aumentarNovePontoTimeA"
+                    android:text="+9"
+                    android:onClick="aumentarNovePontoTimeA"
+                    style="@style/ButtonOutlineBorder" />
+                <Button
+                    android:id="@+id/aumentarDozePontoTimeA"
+                    android:text="+12"
+                    android:onClick="aumentarDozePontoTimeA"
+                    style="@style/ButtonOutlineBorder" />
+
+            </LinearLayout>
+
+            <view
+                android:background="@color/colorLabel"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="2dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Eles"
+                    style="@style/TeamNameTextView" />
+
+                <TextView
+                    android:id="@+id/score_yeam_b"
+                    android:text="0"
+                    style="@style/TeamScoreTextView" />
+
+                <Button
+                    android:id="@+id/aumentarUmPontoTimeB"
+                    android:text="+1"
+                    android:onClick="aumentarUmPontoTimeB"
+                    style="@style/ButtonOutlineBorder" />
+                <Button
+                    android:id="@+id/aumentarTresPontoTimeB"
+                    android:text="+3"
+                    android:onClick="aumentarTresPontoTimeB"
+                    style="@style/ButtonOutlineBorder" />
+                <Button
+                    android:id="@+id/aumentarSeisPontoTimeB"
+                    android:text="+6"
+                    android:onClick="aumentarSeisPontoTimeB"
+                    style="@style/ButtonOutlineBorder" />
+                <Button
+                    android:id="@+id/aumentarNovePontoTimeB"
+                    android:text="+9"
+                    android:onClick="aumentarNovePontoTimeB"
+                    style="@style/ButtonOutlineBorder" />
+                <Button
+                    android:id="@+id/aumentarDozePontoTimeB"
+                    android:text="+12"
+                    android:onClick="aumentarDozePontoTimeB"
+                    style="@style/ButtonOutlineBorder" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:text="ZERO"
+            android:onClick="zerorPontos"
+            style="@style/ButtonOutlineBorder" />
+
+    </LinearLayout>
+
+</ScrollView>
